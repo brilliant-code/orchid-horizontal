@@ -18,7 +18,7 @@ class ServiceProvider extends Provider
         $this->registerResources();
 
         $this->app->booted(function () {
-            $this->app['view']->replaceNamespace('platform', __DIR__ . '/../views/');
+            $this->app['view']->replaceNamespace('platform', __DIR__ . '/../resources/views/');
             $path = realpath(PLATFORM_PATH.'/resources/views');
             $this->loadViewsFrom($path, 'platform');
         });

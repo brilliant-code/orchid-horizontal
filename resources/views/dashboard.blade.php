@@ -12,8 +12,11 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav">
             {!! Dashboard::menu()->render('Main') !!}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            {!! Dashboard::menu()->render('Right') !!}
         </ul>
     </div>
 @endsection
