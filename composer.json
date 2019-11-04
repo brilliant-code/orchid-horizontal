@@ -1,0 +1,27 @@
+{
+    "name": "brilliant-code/orchid-horizontal",
+    "description": "Add horizontal layout functionality to orchid platform ",
+    "type": "library",
+    "require": {
+        "orchid/platform": "^6.1"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ostap",
+            "email": "ostap34php@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BrilliantCode\\OrchidHorizontal\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "BrilliantCode\\OrchidHorizontal\\ServiceProvider"
+            ]
+        }
+    }
+}
