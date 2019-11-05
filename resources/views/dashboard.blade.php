@@ -35,6 +35,14 @@
 
     <div class="d-flex">
         <div class="app-content-body" id="app-content-body">
+            <div class="wrapper pb-0">
+                @hasSection('title')
+                    <h1 class="m-n font-thin h3 text-black">@yield('title')</h1>
+                @endif
+                @hasSection('description')
+                    <small class="text-muted text-ellipsis">@yield('description')</small>
+                @endif
+            </div>
             @include('platform::partials.alert')
             @yield('content')
         </div>
