@@ -37,7 +37,14 @@
         <div class="app-content-body" id="app-content-body">
             <div class="wrapper pb-0">
                 @hasSection('title')
-                    <h1 class="m-n font-thin h3 text-black">@yield('title')</h1>
+                    <h1 class="m-n font-thin h3 text-black">
+                        @if(active(['*create', '*new', '*edit', '*update']))
+                            <a href="javascript:window.history.back();">
+                                <i class="icon-arrow-left-circle"></i>
+                            </a>
+                        @endif
+                        @yield('title')
+                    </h1>
                 @endif
                 @hasSection('description')
                     <small class="text-muted text-ellipsis">@yield('description')</small>
