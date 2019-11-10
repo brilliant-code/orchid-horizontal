@@ -10,6 +10,7 @@ composer require brilliant-code/orchid-horizontal
 
 ## TODO
 
+- Update screenshot
 - Search bar
 - Footer
 
