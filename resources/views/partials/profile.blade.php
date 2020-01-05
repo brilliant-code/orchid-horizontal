@@ -1,5 +1,5 @@
 <div class="dropdown p-0">
-    <a href="#" class="align-items-center v-center p-2" data-toggle="dropdown">
+    <a href="#" class="align-items-center v-center mx-1" data-toggle="dropdown">
         <span class="mr-3 text-white" style="font-size: 0.95em;">
             <span class="text-ellipsis text-capitalize">{{ Auth::user()->getNameTitle() }}</span>
         </span>
